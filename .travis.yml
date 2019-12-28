@@ -1,0 +1,8 @@
+dist: bionic
+language: minimal
+script: echo $name # bash -x $name.sh
+env:
+  - name=bookdown
+  - name=pkgdown
+  - name=docker
+  - name=travis
