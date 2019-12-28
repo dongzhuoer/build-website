@@ -1,8 +1,14 @@
-# Overview
+# build my websites who lives inside Git
+[![Build Status](https://travis-ci.com/dongzhuoer/build-website.svg?branch=master)](https://travis-ci.com/dongzhuoer/build-website)
 
-build my websites who lives inside Git
+This repo only provide minimal environment, make a dedicated repo if you have specical requirement. Theoretically Docker should be omnipotent, though you can't utilize Travis cache.
 
 
+
+# website list
+
+- https://bookdown.dongzhuoer.com
+- https://pkgdown.dongzhuoer.com
 
 
 -----------------------
