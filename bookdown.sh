@@ -24,8 +24,6 @@ docker exec travis git clone --depth 1 -b yihui/r-ninja          https://gitlab.
 docker exec travis bash -c "rm -rf */*/.git"
 
 # auxiliary files
-docker exec travis touch .nojekyll
-docker exec travis bash -c "echo bookdown.dongzhuoer.com > CNAME"
 docker cp bookdown.md travis:/root/index.md && docker exec travis pandoc index.md -s -o index.html
 docker exec travis wget -O readme.md https://raw.githubusercontent.com/dongzhuoer/gist/master/cc-license.md
 
