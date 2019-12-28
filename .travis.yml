@@ -6,3 +6,4 @@ env:
   - name=pkgdown
   - name=docker
   - name=travis
+script: bash -x $name.sh
