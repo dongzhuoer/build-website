@@ -9,7 +9,7 @@
     "tasks": [
         {
             "label": "build",
-            "command": "echo build",
+            "command": "pandoc ${relativeFile} -s -o index.html",
             "group": {
                 "kind": "build",
                 "isDefault": true,
@@ -17,7 +17,7 @@
         },
         {
             "label": "test",
-            "command": "echo test",
+            "command": "google-chrome index.html",
             "group": {
                 "kind": "test",
                 "isDefault": true,
@@ -25,7 +25,7 @@
         },
         {
             "label": "view GitHub",
-            "command": "google-chrome https://github.com/dongzhuoer/${workspaceFolderBasename} 2> /dev/null",
+            "command": "google-chrome https://github.com/dongzhuoer/build-website 2> /dev/null",
         },
     ]
 }
