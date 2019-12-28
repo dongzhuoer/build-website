@@ -1,6 +1,7 @@
 #!/bin/bash
 # trigger deploy stage on this repo
 
+name="$1"
 time=`date '+%Y-%m-%d %H:%M:%S'`
 body="{
    \"request\": {
@@ -8,7 +9,7 @@ body="{
         \"branch\": \"master\",
         \"config\": {
             \"env\": {
-                \"name\": \"$1\"
+                \"name\": \"$name\"
             }
         }
     }
