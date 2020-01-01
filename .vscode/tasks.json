@@ -9,7 +9,7 @@
     "tasks": [
         {
             "label": "build",
-            "command": "pandoc ${relativeFile} -s -o index.html",
+            "command": "Rscript -e \"rmarkdown::render('${relativeFile}', output_file = '~/gitdisk/`echo ${relativeFile} | sed 's/.Rmd//'`.dongzhuoer.com/index.html')\"",
             "group": {
                 "kind": "build",
                 "isDefault": true,
