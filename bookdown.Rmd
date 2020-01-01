@@ -8,31 +8,49 @@ header-includes:
 ---
 
 <style>
-table {
-    /* table-layout: fixed */
+section.main-content {
+    max-width: 100rem
 }
 td:first-child {
-    width: 10rem;
+    width: 100rem;
+}
+ul > li > p > a {
+    font-size: 1.5rem;
 }
 </style>
 
+```{r include=FALSE}
+button <- function(user, repo) {
+    paste0('&nbsp;&nbsp;&nbsp;&nbsp;<iframe src="https://ghbtns.com/github-btn.html?user=', user, '&repo=', repo, '&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>')
+}
+```
+
 [online version](https://bookdown.dongzhuoer.com/), [GitHub repo](https://github.com/dongzhuoer/bookdown.dongzhuoer.com)
 
+- [A Minimal Book Example](rstudio/bookdown-demo)    `r button("rstudio", "bookdown-demo")`    
+  by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
-| Author         | Title                                                                                   |
-|----------------|-----------------------------------------------------------------------------------------|
-| Yihui Xie      | [_A Minimal Book Example_](rstudio/bookdown-demo)                                       |
-| Hadley Wickham | [_R for data science_](hadley/r4ds)                                                     |
-| Hadley Wickham | [_Advanced R_](hadley/adv-r)                                                            |
-| Hadley Wickham | [_R packages_](hadley/r-pkgs)                                                           |
-| Yihui Xie      | [_R Markdown: The Definitive Guide_](rstudio/rmarkdown-book)                            |
-| Yihui Xie      | [_bookdown: Authoring Books and Technical Documents with R Markdown_](rstudio/bookdown) |
-| Yihui Xie      | [_blogdown: Creating Websites with R Markdown_](rstudio/blogdown)                       |
-| Hadley Wickham | [_Tidy evaluation_](tidyverse/tidyeval)                                                 |
-| Hadley Wickham | [_The tidyverse style guide_](tidyverse/style)                                          |
-| Zhuoer Dong    | [Programming in a nutshell](dongzhuoer/nutshell)                                                              |
-| Zhuoer Dong    | [Undergraduate thesis](dongzhuoer/thesis)                                                              |
-| 谢益辉            | [《R语言忍者秘笈》](yihui/r-ninja)                                                              |
+- [R for data science](hadley/r4ds)    `r button("hadley", "r4ds")`  
+
+- [Advanced R](hadley/adv-r)    `r button("hadley", "adv-r")`  
+
+- [R packages](hadley/r-pkgs)    `r button("hadley", "r-pkgs")`  
+
+- [R Markdown: The Definitive Guide](rstudio/rmarkdown-book)    `r button("rstudio", "rmarkdown-book")`  
+
+- [bookdown: Authoring Books and Technical Documents with R Markdown](rstudio/bookdown)    `r button("rstudio", "bookdown")`  
+
+- [blogdown: Creating Websites with R Markdown](rstudio/blogdown)    `r button("rstudio", "blogdown")`  
+
+- [Tidy evaluation](tidyverse/tidyeval)    `r button("rstudio", "tidyeval")`  
+
+- [The tidyverse style guide](tidyverse/style)    `r button("rstudio", "style")`  
+
+- [Programming in a nutshell](dongzhuoer/nutshell)    `r button("rstudio", "nutshell")`  
+
+- [Undergraduate thesis](dongzhuoer/thesis)    `r button("rstudio", "thesis")`  
+
+- [《R语言忍者秘笈》](yihui/r-ninja)    `r button("rstudio", "r-ninja")`  
 
 ------------------------------
 
