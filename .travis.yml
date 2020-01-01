@@ -1,8 +1,9 @@
 dist: bionic
 language: minimal
-script: bash -x $name.sh
-env:
-  - name=bookdown
-  - name=pkgdown
-  - name=docker
-  - name=travis
+script: bash -x $TRAVIS_JOB_NAME.sh
+jobs: 
+  include:
+    - name: bookdown
+    - name: pkgdown
+    - name: docker
+    - name: travis
