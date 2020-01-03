@@ -38,4 +38,4 @@ docker exec rlang0 rm -rf git
 docker exec rlang0 git rm -r --cached .
 docker exec rlang0 git add --all
 docker exec rlang0 git commit -m "Travis build at `date '+%Y-%m-%d %H:%M:%S'`" --allow-empty 
-docker exec rlang0 git push -f
+docker exec rlang0 git push
