@@ -9,6 +9,7 @@ This repo only provide minimal environment, make a dedicated repo if you have sp
 
 - https://bookdown.dongzhuoer.com
 - https://pkgdown.dongzhuoer.com
+- https://latest-output.dongzhuoer.com
 
 
 -----------------------

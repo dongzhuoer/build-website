@@ -11,21 +11,19 @@ header-includes:
 section.main-content {
     max-width: 100rem
 }
+span.icon {
+    font-size: 3rem;
+    line-height: 1.1;
+}
 h1.project-name {
     font-size: 2rem;
 }
 h1.project-name > a {
     color: #fff;
-    text-de
-}
-h1 > a > span.icon{
-    font-size: 3rem;
+    text-decoration: none;
 }
 ul > li > p > a {
     font-size: 1.5rem;
-}
-ul > li > p > a > span.icon {
-    font-size: 2.5rem;
 }
 /* ------------------------- http://fontello.com/ --------------------------- */ 
 @font-face {
@@ -38,6 +36,8 @@ ul > li > p > a > span.icon {
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-gitlab:before { content: '\f296'; } /* '' */
 </style>
+
+
 
 ```{r include=FALSE}
 button <- function(spec) {

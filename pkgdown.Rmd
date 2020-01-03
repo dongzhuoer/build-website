@@ -1,5 +1,5 @@
 ---
-title: "Zhuoer Dong's Favorite R packages <a href='https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com/tree/public'><i class='fa fa-gitlab' style='font-size:3rem'></i></a>"
+title: "[Zhuoer Dong's Favorite R packages](https://pkgdown.dongzhuoer.com/) <a href='https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com/tree/public'><span class='icon icon-gitlab'></span></a>"
 output:
   prettydoc::html_pretty:
 header-includes:
@@ -10,91 +10,103 @@ header-includes:
 
 
 <style>
-h1.project-name {
-    font-size: 3rem;
-}
-h1 > a {
-    color: #fff;
-}
 section.main-content {
     max-width: 100rem
 }
-ul > li > p > a.name {
+span.icon {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+h1.project-name {
     font-size: 2rem;
 }
-ul > li > p > a > i.fa {
-    font-size: 2rem;
+h1.project-name > a {
+    color: #fff;
+    text-decoration: none;
 }
+ul > li > p > a {
+    font-size: 1.5rem;
+}
+/* ------------------------- http://fontello.com/ --------------------------- */ 
+@font-face {
+  font-family: 'fontello';
+  src: url('data:application/octet-stream;base64,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') format('woff');
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+} 
+.icon-github-circled:before { content: '\f09b'; } /* '' */
+.icon-gitlab:before { content: '\f296'; } /* '' */
 </style>
 
 
 
 ```{r include=FALSE}
 button <- function(spec) {
-    paste0("<a href='https://github.com/", spec, "'><i class='fa fa-github'></i></a>")
+    paste0("<a href='https://github.com/", spec, "'><span class='icon icon-github-circled'></span></a>")
 }
 ```
 
 
 
 - `r button("dongzhuoer/biozhuoer")`
-  [biozhuoer](https://pkgdown.dongzhuoer.com/dongzhuoer/biozhuoer){.name}
+  [biozhuoer](dongzhuoer/biozhuoer){.name}
   Some utility functions in bioinformatics, still in developing, use at your own risks.
 
 - `r button("dongzhuoer/bisecpp")`
-  [bisecpp](https://pkgdown.dongzhuoer.com/dongzhuoer/bisecpp)
+  [bisecpp](dongzhuoer/bisecpp)
   General-purpose optimization using enhanced bisection method. It also contains functions for solving equations and model fitting. Still developing, push request in GitHub is welcomed.
 
 - `r button("dongzhuoer/hgnc")`
-  [hgnc](https://pkgdown.dongzhuoer.com/dongzhuoer/hgnc)
+  [hgnc](dongzhuoer/hgnc)
   This package serves a utility for [rGEO](https://github.com/dongzhuoer/rGEO).  It convert a probe-to-geneID map to a probe-to-symbol map. (here **geneID**  refers to entrez gene ID, ensemble gene ID, RefSeq accession, etc.)  
 
 - `r button("dongzhuoer/libzhuoer")`
-  [libzhuoer](https://pkgdown.dongzhuoer.com/dongzhuoer/libzhuoer)
+  [libzhuoer](dongzhuoer/libzhuoer)
   utility functions, my other packages may depend on them.
 
 - `r button("dongzhuoer/mcapomorphy")`
-  [mcapomorphy](https://pkgdown.dongzhuoer.com/dongzhuoer/mcapomorphy)
+  [mcapomorphy](dongzhuoer/mcapomorphy)
   **M**olecular **C**lassfication based on amino acid **apomorphy**
 
 - `r button("dongzhuoer/minir")`
-  [minir](https://pkgdown.dongzhuoer.com/dongzhuoer/minir)
+  [minir](dongzhuoer/minir)
   R package template in Zhuoer's style
 
 - `r button("dongzhuoer/paristools")`
-  [paristools](https://pkgdown.dongzhuoer.com/dongzhuoer/paristools)
+  [paristools](dongzhuoer/paristools)
   Utility for working with PARIS data
 
 - `r button("dongzhuoer/pgmcs")`
-  [pgmcs](https://pkgdown.dongzhuoer.com/dongzhuoer/pgmcs)
+  [pgmcs](dongzhuoer/pgmcs)
   This package implements the simulation in 20.2 of "Genetics From Genes to Genomes, 5th".
 
 - `r button("dongzhuoer/qGSEA")`
-  [qGSEA](https://pkgdown.dongzhuoer.com/dongzhuoer/qGSEA)
+  [qGSEA](dongzhuoer/qGSEA)
   [GSEA](http://software.broadinstitute.org/gsea/index.jsp) is a powerful tool, but preparing its input files, escpecially from GSE raw data, is a painful process. I know that from very personal experience, that's why I develop thistool. You just need a GSE accession and qGSEA would take care of everything else for you.
 
 - `r button("dongzhuoer/Rcppzhuoer")`
-  [Rcppzhuoer](https://pkgdown.dongzhuoer.com/dongzhuoer/Rcppzhuoer) 
+  [Rcppzhuoer](dongzhuoer/Rcppzhuoer) 
   Utility functions for programming with Rcpp 
 
 - `r button("dongzhuoer/rGEO")`
-  [rGEO](https://pkgdown.dongzhuoer.com/dongzhuoer/rGEO)
+  [rGEO](dongzhuoer/rGEO)
   This package contains functions to read GSE raw data and returns a tidy format. It's especially useful for chip annotation file, the format of which is really in a messy. You just need to provide the raw data file and it will give you a nice table containing probes and [HUGO](https://www.genenames.org/) gene symbols.
 
 - `r button("dongzhuoer/rGEO.data")`
-  [rGEO.data](https://pkgdown.dongzhuoer.com/dongzhuoer/rGEO.data)
+  [rGEO.data](dongzhuoer/rGEO.data)
   This package contains several big data and functions to create them from GEO (Gene Expression Omnibus). They are meta data of GPL and GSE database, and of all platforms.  It's used in the testing of [rGEO](https://github.com/dongzhuoer/rGEO).
 
 - `r button("dongzhuoer/rget")`
-  [rget](https://pkgdown.dongzhuoer.com/dongzhuoer/rget)
+  [rget](dongzhuoer/rget)
   fetch contents of a website
 
 - `r button("dongzhuoer/shapebase")`
-  [shapebase](https://pkgdown.dongzhuoer.com/dongzhuoer/shapebase)
+  [shapebase](dongzhuoer/shapebase)
   database of RNA 2nd structures
 
 - `r button("dongzhuoer/zhuoerdown")`
-  [zhuoerdown](https://pkgdown.dongzhuoer.com/dongzhuoer/zhuoerdown)
+  [zhuoerdown](dongzhuoer/zhuoerdown)
   build others' bookdown book in Zhuoer Dong's preference 
 
 
