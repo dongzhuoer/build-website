@@ -97,6 +97,14 @@ button <- function(spec) {
   [rGEO.data](dongzhuoer/rGEO.data)
   This package contains several big data and functions to create them from GEO (Gene Expression Omnibus). They are meta data of GPL and GSE database, and of all platforms.  It's used in the testing of [rGEO](https://github.com/dongzhuoer/rGEO).
 
+- `r button("dongzhuoer/zhuoerdown")`
+  [zhuoerdown](dongzhuoer/zhuoerdown)
+  build others' bookdown book in Zhuoer Dong's preference 
+
+- `r button("dongzhuoer/ggcsgb")`
+  [ggcsgb](dongzhuoer/ggcsgb)
+  This package mimics ggplot2’s `+` syntax to add [**c**hrono**s**trati**g**raphic](http://www.stratigraphy.org/index.php/ics-chart-timescale) **b**ackground for [chronogram](https://en.wikipedia.org/wiki/Phylogenetic_tree#Chronogram) (coalescent time tree).
+
 - `r button("dongzhuoer/rget")`
   [rget](dongzhuoer/rget)
   fetch contents of a website
@@ -105,9 +113,6 @@ button <- function(spec) {
   [shapebase](dongzhuoer/shapebase)
   database of RNA 2nd structures
 
-- `r button("dongzhuoer/zhuoerdown")`
-  [zhuoerdown](dongzhuoer/zhuoerdown)
-  build others' bookdown book in Zhuoer Dong's preference 
 
 
 
