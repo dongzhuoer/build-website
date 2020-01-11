@@ -103,11 +103,6 @@ button <- function(spec) {
   [rget](dongzhuoer/rget)
   fetch contents of a website
 
-- `r button("dongzhuoer/shapebase")`
-  [shapebase](dongzhuoer/shapebase)
-  database of RNA 2nd structures
-
-
 
 
  

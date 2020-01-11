@@ -26,7 +26,6 @@ docker exec rlang0 git clone --depth 1 -b dongzhuoer/hgnc         https://gitlab
 docker exec rlang0 git clone --depth 1 -b dongzhuoer/minir         https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com.git dongzhuoer/minir
 docker exec rlang0 git clone --depth 1 -b dongzhuoer/zhuoerdown         https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com.git dongzhuoer/zhuoerdown
 docker exec rlang0 git clone --depth 1 -b dongzhuoer/ggcsgb         https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com.git dongzhuoer/ggcsgb
-docker exec rlang0 git clone --depth 1 -b dongzhuoer/shapebase          https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com.git dongzhuoer/shapebase
 docker exec rlang0 bash -c "rm -rf */*/.git"
 
 # auxiliary files
