@@ -13,10 +13,12 @@ docker exec rlang0 mkdir {hadley,tidyverse,yihui,dongzhuoer}
 docker exec rlang0 git clone --depth 1 -b rstudio/bookdown-demo  https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git rstudio/bookdown-demo
 docker exec rlang0 git clone --depth 1 -b hadley/r4ds            https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git hadley/r4ds
 docker exec rlang0 git clone --depth 1 -b hadley/adv-r           https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git hadley/adv-r
+docker exec rlang0 git clone --depth 1 -b hadley/ggplot2-book    https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git hadley/ggplot2-book
 docker exec rlang0 git clone --depth 1 -b hadley/r-pkgs          https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git hadley/r-pkgs
 docker exec rlang0 git clone --depth 1 -b rstudio/rmarkdown-book https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git rstudio/rmarkdown-book
 docker exec rlang0 git clone --depth 1 -b rstudio/bookdown       https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git rstudio/bookdown  
 docker exec rlang0 git clone --depth 1 -b rstudio/blogdown       https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git rstudio/blogdown
+docker exec rlang0 git clone --depth 1 -b tidyverse/design       https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git tidyverse/design
 docker exec rlang0 git clone --depth 1 -b tidyverse/style        https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git tidyverse/style
 docker exec rlang0 git clone --depth 1 -b tidyverse/tidyeval     https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git tidyverse/tidyeval
 docker exec rlang0 git clone --depth 1 -b dongzhuoer/nutshell    https://gitlab.com/dongzhuoer/bookdown.dongzhuoer.com.git dongzhuoer/nutshell

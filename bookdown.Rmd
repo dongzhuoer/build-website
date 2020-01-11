@@ -59,6 +59,10 @@ button <- function(spec) {
   [Advanced R](hadley/adv-r)
   by Hadley Wickham
 
+- `r button("hadley/ggplot2-book")`
+  [ggplot2: Elegant Graphics for Data Analysis](hadley/ggplot2-book)
+  by Hadley Wickham
+
 - `r button("hadley/r-pkgs")`
   [R packages](hadley/r-pkgs)
   by Hadley Wickham & Jennifer Bryan
@@ -74,6 +78,10 @@ button <- function(spec) {
 - `r button("rstudio/blogdown/tree/master/docs")`
   [blogdown: Creating Websites with R Markdown](rstudio/blogdown)
   by Yihui Xie, Amber Thomas, Alison Presmanes Hill
+
+- `r button("tidyverse/design")`
+  [Tidyverse design guide](tidyverse/design)
+  by Tidyverse team
 
 - `r button("tidyverse/tidyeval")`
   [Tidy evaluation](tidyverse/tidyeval)
