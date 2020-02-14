@@ -28,8 +28,9 @@ docker exec rlang0 bash -c "rm -rf */*/.git"
 
 # auxiliary files
 docker cp bookdown.Rmd rlang0:/root/index.Rmd
+docker cp bookdown.png rlang0:/root/bookdown.png
 docker exec rlang0 Rscript -e "rmarkdown::render('index.Rmd')"
-docker exec rlang0 rm index.Rmd
+docker exec rlang0 rm index.Rmd bookdown.png
 docker exec rlang0 Rscript -e "download.file('https://raw.githubusercontent.com/dongzhuoer/gist/master/cc-license.md', 'readme.md')"
 docker exec rlang0 bash -c 'echo -e ".gitconfig\n" > .gitignore'
 

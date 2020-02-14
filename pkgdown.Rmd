@@ -1,13 +1,10 @@
 ---
 title: "[Zhuoer Dong's Favorite R packages](https://pkgdown.dongzhuoer.com/) <a href='https://gitlab.com/dongzhuoer/pkgdown.dongzhuoer.com/tree/public'><span class='icon icon-gitlab'></span></a>"
 output:
-  prettydoc::html_pretty:
-header-includes:
-    - <meta charset="utf-8">
-    - <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  prettydoc::html_pretty: default
 ---
 
-
+<link rel="icon" type="image/png" href="pkgdown.png">
 
 <style>
 section.main-content {
@@ -38,8 +35,6 @@ ul > li > p > a {
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-gitlab:before { content: '\f296'; } /* '' */
 </style>
-
-
 
 ```{r include=FALSE}
 button <- function(spec) {
