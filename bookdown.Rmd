@@ -37,71 +37,64 @@ ul > li > p > a {
 </style>
 
 ```{r include=FALSE}
+# spec = "rstudio/bookdown-demo"
 button <- function(spec) {
     paste0("<a href='https://github.com/", spec, "'><span class='icon icon-github-circled'></span></a>")
 }
+
+# link = "rstudio/bookdown-demo"; title = "A Minimal Book Example"
+book <- function(link, title) {
+    repo = paste(stringr::str_split(link, '/')[[1]][1:2], collapse = '/')
+    paste0(button(link), " <a href='", repo, "'>", title, "</a>")
+}
 ```
 
-- `r button("rstudio/bookdown-demo")`
-  [A Minimal Book Example](rstudio/bookdown-demo)
+- `r book("rstudio/bookdown-demo", "A Minimal Book Example")`
   by Yihui Xie
 
-- `r button("hadley/r4ds")`
-  [R for data science](hadley/r4ds)
+- `r book("hadley/r4ds", "R for data science")`
   by Hadley Wickham & Garrett Grolemund
 
-- `r button("hadley/adv-r")`
-  [Advanced R](hadley/adv-r)
+- `r book("hadley/adv-r", "Advanced R")`
   by Hadley Wickham
 
-- `r button("hadley/ggplot2-book")`
-  [ggplot2: Elegant Graphics for Data Analysis](hadley/ggplot2-book)
+- `r book("hadley/ggplot2-book", "ggplot2: Elegant Graphics for Data Analysis")`
   by Hadley Wickham
 
-- `r button("hadley/r-pkgs")`
-  [R packages](hadley/r-pkgs)
+- `r book("hadley/r-pkgs", "R packages")`
   by Hadley Wickham & Jennifer Bryan
 
-- `r button("rstudio/rmarkdown-book")`
-  [R Markdown: The Definitive Guide](rstudio/rmarkdown-book)
+- `r book("rstudio/rmarkdown-book", "R Markdown: The Definitive Guide")`
   by Yihui Xie, J. J. Allaire, Garrett Grolemund
 
-- `r button("rstudio/bookdown/tree/master/inst/examples")`
-  [bookdown: Authoring Books and Technical Documents with R Markdown](rstudio/bookdown)
+- `r book("rstudio/bookdown/tree/master/inst/examples", "bookdown: Authoring Books and Technical Documents with R Markdown")`
   by Yihui Xie  
 
-- `r button("rstudio/blogdown/tree/master/docs")`
-  [blogdown: Creating Websites with R Markdown](rstudio/blogdown)
+- `r book("rstudio/blogdown/tree/master/docs", "blogdown: Creating Websites with R Markdown")`
   by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
-- `r button("tidyverse/design")`
-  [Tidyverse design guide](tidyverse/design)
+- `r book("tidyverse/design", "Tidyverse design guide")`
   by Tidyverse team
 
-- `r button("tidyverse/tidyeval")`
-  [Tidy evaluation](tidyverse/tidyeval)
+- `r book("tidyverse/tidyeval", "Tidy evaluation")`
   by Hadley Wickham & Lionel Henry
 
-- `r button("tidyverse/style")`
-  [The tidyverse style guide](tidyverse/style)
+- `r book("tidyverse/style", "The tidyverse style guide")`
   by Hadley Wickham
 
-- `r button("dongzhuoer/nutshell")`
-  [Programming in a nutshell](dongzhuoer/nutshell)
+- `r book("dongzhuoer/nutshell", "Programming in a nutshell")`
   by Zhuoer Dong  
 
-- `r button("dongzhuoer/thesis/tree/master/bookdown")`
-  [Undergraduate thesis](dongzhuoer/thesis)
+- `r book("dongzhuoer/thesis/tree/master/bookdown", "Undergraduate thesis")`
   by Zhuoer Dong
 
-- `r button("yihui/r-ninja")`
-  [《R语言忍者秘笈》](yihui/r-ninja)
+- `r book("yihui/r-ninja", "《R语言忍者秘笈》")`
   by 谢益辉，肖楠，坑主三，坑主四
 
 
 ------------------------------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png){data-external="1"}](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 

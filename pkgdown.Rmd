@@ -21,7 +21,7 @@ h1.project-name > a {
     color: #fff;
     text-decoration: none;
 }
-ul > li > p > a {
+ul > li > p > a.name {
     font-size: 1.5rem;
 }
 /* ------------------------- http://fontello.com/ --------------------------- */ 
@@ -37,72 +37,63 @@ ul > li > p > a {
 </style>
 
 ```{r include=FALSE}
+# spec = "dongzhuoer/pgmcs"
 button <- function(spec) {
     paste0("<a href='https://github.com/", spec, "'><span class='icon icon-github-circled'></span></a>")
 }
+
+# repo = "dongzhuoer/pgmcs"
+package <- function(repo, title) {
+    name = stringr::str_split(repo, '/')[[1]][2]
+    paste0(button(repo), " <a class='name' href='", repo, "'>", name, "</a>")
+}
 ```
 
-- `r button("dongzhuoer/pgmcs")`
-  [pgmcs](dongzhuoer/pgmcs)
+- `r package("dongzhuoer/pgmcs")`
   This package implements the simulation in 20.2 of "Genetics From Genes to Genomes, 5th".
 
-- `r button("dongzhuoer/bisecpp")`
-  [bisecpp](dongzhuoer/bisecpp)
+- `r package("dongzhuoer/bisecpp")`
   General-purpose optimization using enhanced bisection method. It also contains functions for solving equations and model fitting. Still developing, push request in GitHub is welcomed.
 
-- `r button("dongzhuoer/ggcsgb")`
-  [ggcsgb](dongzhuoer/ggcsgb)
+- `r package("dongzhuoer/ggcsgb")`
   This package mimics ggplot2’s `+` syntax to add [**c**hrono**s**trati**g**raphic](http://www.stratigraphy.org/index.php/ics-chart-timescale) **b**ackground for [chronogram](https://en.wikipedia.org/wiki/Phylogenetic_tree#Chronogram) (coalescent time tree).
 
-- `r button("dongzhuoer/biozhuoer")`
-  [biozhuoer](dongzhuoer/biozhuoer){.name}
+- `r package("dongzhuoer/biozhuoer")`
   Some utility functions in bioinformatics, still in developing, use at your own risks.
 
-- `r button("dongzhuoer/Rcppzhuoer")`
-  [Rcppzhuoer](dongzhuoer/Rcppzhuoer) 
+- `r package("dongzhuoer/Rcppzhuoer")`
   Utility functions for programming with Rcpp 
 
-- `r button("dongzhuoer/paristools")`
-  [paristools](dongzhuoer/paristools)
+- `r package("dongzhuoer/paristools")`
   Utility for working with PARIS data
 
-- `r button("dongzhuoer/zhuoerdown")`
-  [zhuoerdown](dongzhuoer/zhuoerdown)
+- `r package("dongzhuoer/zhuoerdown")`
   build others' bookdown book in Zhuoer Dong's preference 
 
-- `r button("dongzhuoer/libzhuoer")`
-  [libzhuoer](dongzhuoer/libzhuoer)
+- `r package("dongzhuoer/libzhuoer")`
   utility functions, my other packages may depend on them.
 
-- `r button("dongzhuoer/minir")`
-  [minir](dongzhuoer/minir)
+- `r package("dongzhuoer/minir")`
   R package template in Zhuoer's style
 
-- `r button("dongzhuoer/qGSEA")`
-  [qGSEA](dongzhuoer/qGSEA)
+- `r package("dongzhuoer/qGSEA")`
   [GSEA](http://software.broadinstitute.org/gsea/index.jsp) is a powerful tool, but preparing its input files, escpecially from GSE raw data, is a painful process. I know that from very personal experience, that's why I develop thistool. You just need a GSE accession and qGSEA would take care of everything else for you.
 
-- `r button("dongzhuoer/rGEO")`
-  [rGEO](dongzhuoer/rGEO)
+- `r package("dongzhuoer/rGEO")`
   This package contains functions to read GSE raw data and returns a tidy format. It's especially useful for chip annotation file, the format of which is really in a messy. You just need to provide the raw data file and it will give you a nice table containing probes and [HUGO](https://www.genenames.org/) gene symbols.
 
-- `r button("dongzhuoer/hgnc")`
-  [hgnc](dongzhuoer/hgnc)
+- `r package("dongzhuoer/hgnc")`
   This package serves a utility for [rGEO](https://github.com/dongzhuoer/rGEO).  It convert a probe-to-geneID map to a probe-to-symbol map. (here **geneID**  refers to entrez gene ID, ensemble gene ID, RefSeq accession, etc.)  
 
-- `r button("dongzhuoer/rGEO.data")`
-  [rGEO.data](dongzhuoer/rGEO.data)
+- `r package("dongzhuoer/rGEO.data")`
   This package contains several big data and functions to create them from GEO (Gene Expression Omnibus). They are meta data of GPL and GSE database, and of all platforms.  It's used in the testing of [rGEO](https://github.com/dongzhuoer/rGEO).
 
-- `r button("dongzhuoer/rget")`
-  [rget](dongzhuoer/rget)
+- `r package("dongzhuoer/rget")`
   fetch contents of a website
 
 
 
- 
-
 ------------------------------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png){data-external="1"}](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
