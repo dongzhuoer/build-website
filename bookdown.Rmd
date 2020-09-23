@@ -4,8 +4,6 @@ output:
   prettydoc::html_pretty: default
 ---
 
-<link rel="icon" type="image/png" href="bookdown.png">
-
 <style>
 section.main-content {
     max-width: 100rem
@@ -91,12 +89,14 @@ book <- function(link, title) {
 - `r book("yihui/r-ninja", "《R语言忍者秘笈》")`
   by 谢益辉，肖楠，坑主三，坑主四
 
-
 ------------------------------
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png){data-external="1"}](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-
-
-
+<script>
+var link = document.createElement("link")
+link.rel = "icon"
+link.href = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAAIVBMVEUAAABHcEzTy8C0pJc4FhY5FhY5Fhb7+/v78dCGcGdYPjsK39yJAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAHYSURBVEjH1ZZPb4IwFMC98EUeIxSOoBlwHRzwZDKbzH0ML2XXMmPrUTQDj7Ilc59y9Q/yRwrLssuaRhvf7/1amvCeg0F9KJNB51AwnnTHw00XoeAZols5IfIRY3QoI475TAyZo4jLiLP/QrSctMxvd1TzT0TjpM1401H3M3X3dagRjbgRYPxQddzEn/Ehrexy3Z8CAGMxDj/wGJVPe70/0AkhczQMR2IHKO/0kk9VEaZL8jJ2xRHuiVU4BlPn5F9ABIhQGNoiPiMEnk4/x0EJCAMj88cNxvitFRCGJTW82RaHRGaISIxxbuhEZiDRJvDzJZEaWKzTY7rcYEEkB873EHUbCOk2/AOAgg16pM/FF2oDVACr8nED2O5u6o8TY+2++8EhsZsAz87D9y+LtAFIxl8BavHenBb2LbAqAH60ub8BspzaazG5k4GdiYVn5Tw5eM7VoJnIXDGPW86KuWJylHC2p59X4PWOaRozuYdM5prMpGtPrQGGmAtkc2u/QK4mHiSL9xUgzhyaHKeRGpC4kIgnZ2mcxcmPLuqmfNVKmXj9GwWopdQpUkdRcGWOaplrc3QUytZS212K+4t5fzvobyj9Lal00JG87XW3xf7G2t+a+5t7y9+Db17yoIhrGLykAAAAAElFTkSuQmCC"
+document.head.appendChild(link)
+</script>
